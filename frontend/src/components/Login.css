@@ -1,0 +1,161 @@
+/* Estilos generales de la página de inicio de sesión */
+body {
+    background: linear-gradient(135deg, #4A90E2, #50E3C2); /* Degradado atractivo */
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Container del inicio de sesión */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Tarjeta del formulario de inicio de sesión */
+.login-card {
+    background-color: rgba(109, 190, 69, 0.9); /* Fondo verde suave semi-transparente */
+    padding: 40px;
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    max-width: 3000px; /* Aumentar el ancho máximo */
+    width: 100%; /* Asegurarse de que el formulario use todo el espacio disponible */
+    text-align: center;
+    position: relative; /* Para colocar la imagen de inicio de sesión */
+}
+
+/* Imagen de inicio de sesión centrada */
+.login-image {
+    position: absolute;
+    top: -60px; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Tamaño de la imagen */
+    border-radius: 50%; /* Para hacer la imagen circular, si es aplicable */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto 3D */
+}
+
+/* Título del formulario */
+h2 {
+    color: #000; /* Cambiado a negro */
+    margin-bottom: 20px;
+    font-size: 28px; /* Aumentar el tamaño de la fuente */
+    font-weight: bold;
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    font-size: 16px; /* Aumentar el tamaño de la fuente */
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Inputs del formulario */
+.form-control {
+    border-radius: 10px; /* Bordes más redondeados */
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%; /* Mantener el ancho completo */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4A90E2; /* Color de borde al enfocar */
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+    outline: none;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #6DBE45; /* Verde suave */
+    border: none;
+    padding: 12px; /* Padding simétrico */
+    font-size: 18px;
+    color: white;
+    border-radius: 10px; /* Bordes más redondeados */
+    width: 48%; /* Botones ocupando 48% del ancho */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #5BAA3A; /* Verde más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Mensaje de error */
+.text-danger {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Modal de confirmación */
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    font-size: 22px;
+    color: #4A90E2;
+    margin-bottom: 15px;
+}
+
+.modal-body {
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-footer button {
+    background-color: #4A90E2;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+    background-color: #357ABD;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .login-card {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px; /* Ajustar el tamaño del título en pantallas pequeñas */
+    }
+
+    .form-control {
+        font-size: 14px; /* Ajustar el tamaño de los inputs */
+    }
+
+    .btn-primary {
+        font-size: 16px; /* Ajustar el tamaño del botón */
+    }
+
+    .login-image {
+        width: 80px; /* Tamaño de imagen más pequeño */
+    }
+}
+
+
+

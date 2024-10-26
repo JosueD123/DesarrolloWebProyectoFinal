@@ -1,0 +1,160 @@
+/* Estilos generales de la página de registro */
+body {
+    background: linear-gradient(135deg, #FF5B5B, #FFC371); /* Degradado cálido entre rojo y amarillo */
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Container del registro */
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Tarjeta del formulario de registro */
+.registro-card {
+    background-color: rgba(76, 175, 80, 0.9); /* Fondo verde medio suave semi-transparente */
+    padding: 50px; /* Aumentar el padding */
+    border-radius: 25px; /* Bordes más redondeados */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
+    max-width: 500px; /* Mayor ancho máximo */
+    width: 90%; /* Ajustar el ancho al 90% para pantallas pequeñas */
+    text-align: center;
+    position: relative; /* Para colocar la imagen de registro */
+}
+
+/* Imagen de registro centrada */
+.registro-image {
+    position: absolute;
+    top: -70px; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Tamaño de la imagen */
+    border-radius: 50%; /* Para hacer la imagen circular */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+}
+
+/* Título del formulario */
+h2 {
+    color: #fff; /* Blanco para el título para resaltar en fondo verde */
+    margin-bottom: 25px;
+    font-size: 30px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    text-transform: uppercase; /* Mayúsculas para mayor impacto */
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    font-size: 16px; /* Aumentar el tamaño de fuente */
+    color: #fff; /* Blanco para las etiquetas */
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Inputs del formulario */
+.form-control {
+    border-radius: 12px; /* Bordes más suaves */
+    padding: 14px; /* Más padding para mejor usabilidad */
+    font-size: 17px; /* Aumentar el tamaño de fuente */
+    border: 1px solid #fff; /* Borde blanco */
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para los inputs */
+}
+
+.form-control:focus {
+    border-color: #fff; /* Blanco al enfocar */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra con color blanco */
+    outline: none;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #4CAF50; /* Verde medio */
+    border: none;
+    padding: 16px; /* Aumentar el padding */
+    font-size: 20px; /* Aumentar el tamaño de fuente */
+    color: white;
+    border-radius: 12px; /* Bordes más redondeados */
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; /* Animación de transformación */
+}
+
+.btn-primary:hover {
+    background-color: #388E3C; /* Verde más oscuro */
+    transform: translateY(-3px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Mensaje de error */
+.text-danger {
+    color: #E74C3C; /* Rojo para mensajes de error */
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Modal de confirmación */
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    font-size: 24px;
+    color: #4CAF50; /* Verde medio para el título del modal */
+    margin-bottom: 15px;
+}
+
+.modal-body {
+    font-size: 16px;
+    color: #34495E; /* Azul oscuro */
+}
+
+.modal-footer button {
+    background-color: #4CAF50; /* Verde medio */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+    background-color: #388E3C; /* Verde más oscuro */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .registro-card {
+        padding: 30px; /* Reducir padding en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 26px; /* Ajustar el tamaño del título */
+    }
+
+    .form-control {
+        font-size: 16px; /* Ajustar el tamaño de fuente */
+    }
+
+    .btn-primary {
+        font-size: 18px; /* Ajustar el tamaño de fuente */
+    }
+
+    .registro-image {
+        width: 80px; /* Tamaño de imagen más pequeño */
+    }
+}

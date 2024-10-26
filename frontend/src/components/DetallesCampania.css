@@ -1,0 +1,71 @@
+.detalles-campania {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #6ae46a; /* Color verde claro para el fondo del formulario */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-campania {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.descripcion-campania {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #666;
+}
+
+.grafico-contenedor {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.candidatos-lista {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.candidato-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.candidato-card:hover {
+    transform: scale(1.05);
+}
+
+.candidato-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-votar {
+    background-color: #2980B9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-votar:hover {
+    background-color: #1c5e87;
+}
+

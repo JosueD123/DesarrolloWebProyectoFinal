@@ -1,0 +1,99 @@
+/* Estilos para el contenedor general */
+.campanias-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px; /* Aumento del padding */
+    background-color: #e3f2fd; /* Fondo azul suave */
+    min-height: 100vh;
+}
+
+/* Título principal */
+.titulo-principal {
+    font-size: 3.5rem; /* Aumento del tamaño */
+    font-weight: 700; /* Mayor peso */
+    color: #1976d2; /* Color azul intenso */
+    margin-bottom: 60px; /* Mayor separación */
+    text-align: center; /* Alineación centrada */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra suave para el texto */
+}
+
+/* Grid para las campañas */
+.campanias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ancho mínimo aumentado */
+    gap: 40px; /* Mayor separación entre tarjetas */
+    width: 100%;
+    max-width: 1400px; /* Ampliar el ancho máximo */
+}
+
+/* Estilo base para las tarjetas de campaña */
+.campania-card {
+    background-color: #ffffff;
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más suave y difusa */
+    padding: 30px; /* Aumento del padding */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 380px; /* Ajuste del ancho máximo */
+    margin: auto;
+}
+
+/* Efecto hover en las tarjetas */
+.campania-card:hover {
+    transform: translateY(-10px); /* Suave elevación */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Estilo para las tarjetas deshabilitadas */
+.campania-deshabilitada {
+    opacity: 0.5; /* Cambia la opacidad para que se vea menos */
+    background-color: #f8bbd0; /* Fondo suave para deshabilitadas */
+    color: #c2185b; /* Color rosa intenso */
+    box-shadow: none;
+}
+
+/* Títulos de las campañas */
+.campania-card h3 {
+    font-size: 2.2rem; /* Aumento del tamaño */
+    color: #d32f2f; /* Color rojo */
+    margin-bottom: 20px; /* Espaciado mayor */
+    text-transform: capitalize;
+}
+
+/* Descripción de las campañas */
+.campania-card p {
+    font-size: 1.2rem; /* Aumento del tamaño */
+    color: #666; /* Color gris oscuro */
+    line-height: 1.5; /* Aumento de la altura de línea */
+}
+
+/* Estilo del botón "Ver detalles" como enlace estilizado */
+.campania-card a {
+    display: inline-block;
+    background-color: #388e3c; /* Verde oscuro */
+    color: #ffffff;
+    padding: 15px 30px; /* Padding simétrico aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-weight: 600; /* Peso de la fuente moderado */
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    font-size: 1.1rem; /* Aumento del tamaño de la fuente */
+}
+
+.campania-card a:hover {
+    background-color: #2e7d32; /* Verde más oscuro al pasar el ratón */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.campania-card a:active {
+    background-color: #1b5e20; /* Verde aún más oscuro al hacer clic */
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+

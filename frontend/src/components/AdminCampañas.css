@@ -1,0 +1,180 @@
+/* Tarjeta deshabilitada */
+.campania-deshabilitada {
+    background-color: #e0e0e0; /* Fondo gris claro para campañas deshabilitadas */
+    color: #7d7d7d; /* Color de texto más apagado */
+}
+
+.admin-campanias-container {
+    background: linear-gradient(135deg, #A8E6CE, #DCEDC1); /* Degradado verde suave */
+    padding: 50px; /* Espaciado aumentado */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.titulo-principal {
+    color: #1d1d1d; /* Color del título */
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px; /* Aumento del margen */
+}
+
+.campanias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajuste de columnas */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.campania-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco de las tarjetas */
+    padding: 25px; /* Aumento del padding */
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campania-card h3 {
+    color: #2980B9; /* Texto azul en las tarjetas */
+    margin-bottom: 10px;
+    font-size: 24px; /* Aumento del tamaño de fuente */
+}
+
+.campania-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.nueva-campania {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #FFFFFF; /* Fondo blanco para nueva campaña */
+    color: black; /* Texto negro */
+    font-size: 40px;
+    padding: 50px;
+    border-radius: 15px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nueva-campania:hover {
+    background-color: #f0f0f0; /* Color gris claro al hacer hover */
+}
+
+.icono-mas {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.modal-body .form-control {
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Aumento del padding */
+    font-size: 16px;
+    background-color: #2980B9; /* Botones azules */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1A73E8; /* Color más claro al hacer hover en los botones */
+}
+
+/* Estilos para el switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2980B9;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Media queries para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .titulo-principal {
+        font-size: 28px;
+    }
+
+    .campanias-grid {
+        grid-template-columns: 1fr; /* 1 columna para pantallas pequeñas */
+        gap: 15px;
+    }
+
+    .campania-card {
+        padding: 15px;
+    }
+
+    .nueva-campania {
+        font-size: 30px;
+        padding: 40px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .campania-card {
+        padding: 10px;
+    }
+
+    .nueva-campania {
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
