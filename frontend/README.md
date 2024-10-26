@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Proyecto Backend
+
+Este es el backend de un proyecto web desarrollado con Node.js y Express. El objetivo de este proyecto es proporcionar una API RESTful que sirva datos a un frontend, facilitando la comunicación entre el cliente y el servidor.
+
+## Descripción
+
+Este backend está diseñado para gestionar las solicitudes y respuestas entre el cliente y el servidor. Utiliza Express para crear rutas, Body-parser para manejar las solicitudes JSON y CORS para permitir solicitudes desde diferentes orígenes.
+
+## Tecnologías Utilizadas
+
+- **Node.js**: Entorno de ejecución para JavaScript del lado del servidor.
+- **Express**: Framework minimalista para crear aplicaciones web en Node.js.
+- **CORS**: Middleware para habilitar CORS (Cross-Origin Resource Sharing).
+- **Body-parser**: Middleware para manejar los cuerpos de las solicitudes HTTP.
+
+## Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/JosueD123/DesarrolloWebProyectoFinal.git
+   cd DesarrolloWebProyectoFinal
